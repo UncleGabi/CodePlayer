@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Code Player</title>
+
+        <!-- jQuery CDN -->
+        <script 
+            src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+            integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" 
+            crossorigin="anonymous">
+        </script>
+        
+        <!-- jQuery UI with CSS link -->
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <div id="header">
+            <h2>Code Player</h2>
+
+            <div id="tabs">
+                    <button id="html" type="submit">HTML</button>
+                    <button id="css" type="button">CSS</button>
+                    <button id="javascript" type="button">JavaScript</button>
+                    <button id="output" type="button">Output</button>
+            </div>
+
+        </div>
+
+        <div id="code-area">
+
+            <div id="htmlBox" class="codeBox">
+                <div class="codeHeader">HTML</div>
+                <textarea id="htmlSection" class="codeSection"></textarea>
+            </div>
+
+            <div id="cssBox" class="codeBox">
+                <div class="codeHeader">CSS</div>
+                <textarea id="cssSection" class="codeSection"></textarea>
+            </div>
+
+            <div id="javascriptBox" class="codeBox">
+                <div class="codeHeader">JavaScript</div>
+                <textarea id="javaScriptSection" class="codeSection"></textarea>
+            </div>
+
+            <div id="outputBox" class="codeBox">
+                <div class="codeHeader">Output</div>
+                <iframe></iframe>
+            </div>
+
+        </div>
+
+
+        <script src="script.js"></script>
+
+    </body>
+</html>
